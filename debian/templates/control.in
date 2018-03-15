@@ -375,6 +375,41 @@ Description: Transitional package for nvidia-headless-#FLAVOUR#
  This is a transitional package for nvidia-headless-#FLAVOUR#, and can be
  safely removed after the installation is complete.
 
+Package: nvidia-387
+Architecture: i386 amd64 armhf
+Depends: nvidia-driver-#FLAVOUR#
+Description: Transitional package for nvidia-driver-#FLAVOUR#
+ This is a transitional package for nvidia-driver-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-387-dev
+Architecture: i386 amd64 armhf
+Depends: nvidia-driver-#FLAVOUR#
+Description: Transitional package for nvidia-driver-#FLAVOUR#
+ This is a transitional package for nvidia-driver-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-libopencl1-387
+Architecture: i386 amd64
+Depends: nvidia-compute-#FLAVOUR#
+Description: Transitional package for nvidia-compute-#FLAVOUR#
+ This is a transitional package for nvidia-compute-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: nvidia-opencl-icd-387
+Architecture: i386 amd64
+Depends: nvidia-compute-#FLAVOUR#
+Description: Transitional package for nvidia-compute-#FLAVOUR#
+ This is a transitional package for nvidia-compute-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
+Package: libcuda1-387
+Architecture: i386 amd64 armhf
+Depends: nvidia-compute-#FLAVOUR#
+Description: Transitional package for nvidia-compute-#FLAVOUR#
+ This is a transitional package for nvidia-compute-#FLAVOUR#, and can be
+ safely removed after the installation is complete.
+
 Package: nvidia-390
 Architecture: i386 amd64 armhf
 Depends: nvidia-driver-#FLAVOUR#
