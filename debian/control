@@ -29,13 +29,13 @@ Architecture: i386 amd64
 Depends:
  libnvidia-gl-396 (= ${binary:Version}),
  nvidia-dkms-396 (= ${binary:Version}) [amd64],
- nvidia-kernel-source-396 (= ${binary:Version}),
+ nvidia-kernel-source-396 (= ${binary:Version}) [amd64],
  libnvidia-compute-396 (= ${binary:Version}),
- nvidia-compute-utils-396 (= ${binary:Version}),
+ nvidia-compute-utils-396 (= ${binary:Version}) [amd64],
  libnvidia-decode-396 (= ${binary:Version}) [i386 amd64],
  libnvidia-encode-396 (= ${binary:Version}) [i386 amd64],
  nvidia-utils-396 (= ${binary:Version}) [amd64],
- xserver-xorg-video-nvidia-396 (= ${binary:Version}),
+ xserver-xorg-video-nvidia-396 (= ${binary:Version}) [amd64],
  libnvidia-cfg1-396 (= ${binary:Version}) [amd64],
  libnvidia-ifr1-396 (= ${binary:Version}),
  libnvidia-fbc1-396 (= ${binary:Version}),
@@ -165,7 +165,7 @@ Description: NVIDIA headless metapackage - no DKMS
  provided by the nvidia-driver-396 metapackage.
 
 Package: nvidia-headless-396
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  nvidia-headless-no-dkms-396,
  nvidia-dkms-396,

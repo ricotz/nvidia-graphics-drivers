@@ -29,13 +29,13 @@ Architecture: i386 amd64
 Depends:
  libnvidia-gl-#FLAVOUR# (= ${binary:Version}),
  nvidia-dkms-#FLAVOUR# (= ${binary:Version}) [amd64],
- nvidia-kernel-source-#FLAVOUR# (= ${binary:Version}),
+ nvidia-kernel-source-#FLAVOUR# (= ${binary:Version}) [amd64],
  libnvidia-compute-#FLAVOUR# (= ${binary:Version}),
- nvidia-compute-utils-#FLAVOUR# (= ${binary:Version}),
+ nvidia-compute-utils-#FLAVOUR# (= ${binary:Version}) [amd64],
  libnvidia-decode-#FLAVOUR# (= ${binary:Version}) [i386 amd64],
  libnvidia-encode-#FLAVOUR# (= ${binary:Version}) [i386 amd64],
  nvidia-utils-#FLAVOUR# (= ${binary:Version}) [amd64],
- xserver-xorg-video-nvidia-#FLAVOUR# (= ${binary:Version}),
+ xserver-xorg-video-nvidia-#FLAVOUR# (= ${binary:Version}) [amd64],
  libnvidia-cfg1-#FLAVOUR# (= ${binary:Version}) [amd64],
  libnvidia-ifr1-#FLAVOUR# (= ${binary:Version}),
  libnvidia-fbc1-#FLAVOUR# (= ${binary:Version}),
@@ -165,7 +165,7 @@ Description: NVIDIA headless metapackage - no DKMS
  provided by the nvidia-driver-#FLAVOUR# metapackage.
 
 Package: nvidia-headless-#FLAVOUR#
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  nvidia-headless-no-dkms-#FLAVOUR#,
  nvidia-dkms-#FLAVOUR#,
