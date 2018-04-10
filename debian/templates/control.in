@@ -36,7 +36,7 @@ Depends:
  libnvidia-encode-#FLAVOUR# (= ${binary:Version}) [i386 amd64],
  nvidia-utils-#FLAVOUR# (= ${binary:Version}) [amd64],
  xserver-xorg-video-nvidia-#FLAVOUR# (= ${binary:Version}),
- libnvidia-cfg1-#FLAVOUR# (= ${binary:Version}),
+ libnvidia-cfg1-#FLAVOUR# (= ${binary:Version}) [amd64],
  libnvidia-ifr1-#FLAVOUR# (= ${binary:Version}),
  libnvidia-fbc1-#FLAVOUR# (= ${binary:Version}),
  ${misc:Depends}
@@ -237,7 +237,7 @@ Description: NVIDIA binary Xorg driver
  for a complete list of supported GPUs and PCI IDs.
 
 Package: libnvidia-cfg1-#FLAVOUR#
-Architecture: i386 amd64
+Architecture: amd64
 Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends}
