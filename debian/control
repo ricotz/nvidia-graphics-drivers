@@ -28,7 +28,7 @@ Package: nvidia-driver-396
 Architecture: i386 amd64
 Depends:
  libnvidia-gl-396 (= ${binary:Version}),
- nvidia-dkms-396 (= ${binary:Version}),
+ nvidia-dkms-396 (= ${binary:Version}) [amd64],
  nvidia-kernel-source-396 (= ${binary:Version}),
  libnvidia-compute-396 (= ${binary:Version}),
  nvidia-compute-utils-396 (= ${binary:Version}),
@@ -58,7 +58,7 @@ Description: NVIDIA driver metapackage
  for a complete list of supported GPUs and PCI IDs.
 
 Package: nvidia-kernel-source-396
-Architecture: i386 amd64
+Architecture: amd64
 Multi-Arch: foreign
 Conflicts:
  nvidia-kernel-source
@@ -73,7 +73,7 @@ Description: NVIDIA kernel source package
  driver.
 
 Package: nvidia-dkms-396
-Architecture: i386 amd64
+Architecture: amd64
 Multi-Arch: foreign
 Conflicts:
  nvidia-dkms-kernel
@@ -146,7 +146,7 @@ Description: NVIDIA compute utilities
  Pre-CUDA 4.0 APIs are not supported under CUDA MPS.
 
 Package: nvidia-headless-no-dkms-396
-Architecture: i386 amd64
+Architecture: amd64
 Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
@@ -179,7 +179,7 @@ Description: NVIDIA headless metapackage
  provided by the nvidia-driver-396 metapackage.
 
 Package: nvidia-kernel-common-396
-Architecture: i386 amd64
+Architecture: amd64
 Conflicts: nvidia-kernel-common
 Provides: nvidia-kernel-common
 Depends:
