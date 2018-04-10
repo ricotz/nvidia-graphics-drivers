@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-396 (396.18-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream beta release
+
+ -- Rico Tzschichholz <ricotz@ubuntu.com>  Tue, 10 Apr 2018 22:46:57 +0200
+
 nvidia-graphics-drivers-390 (390.48-0ubuntu3) bionic; urgency=medium
 
   * debian/rules, debian/templates/control.in,
