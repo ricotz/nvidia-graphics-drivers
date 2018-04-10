@@ -34,7 +34,7 @@ Depends:
  nvidia-compute-utils-#FLAVOUR# (= ${binary:Version}),
  libnvidia-decode-#FLAVOUR# (= ${binary:Version}) [i386 amd64],
  libnvidia-encode-#FLAVOUR# (= ${binary:Version}) [i386 amd64],
- nvidia-utils-#FLAVOUR# (= ${binary:Version}),
+ nvidia-utils-#FLAVOUR# (= ${binary:Version}) [amd64],
  xserver-xorg-video-nvidia-#FLAVOUR# (= ${binary:Version}),
  libnvidia-cfg1-#FLAVOUR# (= ${binary:Version}),
  libnvidia-ifr1-#FLAVOUR# (= ${binary:Version}),
@@ -93,7 +93,7 @@ Description: NVIDIA DKMS package
  any new kernel headers that are installed.
 
 Package: nvidia-utils-#FLAVOUR#
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  ${shlibs:Depends}, ${misc:Depends}
 Suggests:
@@ -127,7 +127,7 @@ Description: NVIDIA libcompute package
  OpenCL.
 
 Package: nvidia-compute-utils-#FLAVOUR#
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  libnvidia-compute-#FLAVOUR#, adduser,
  ${misc:Depends}, ${shlibs:Depends}

@@ -34,7 +34,7 @@ Depends:
  nvidia-compute-utils-396 (= ${binary:Version}),
  libnvidia-decode-396 (= ${binary:Version}) [i386 amd64],
  libnvidia-encode-396 (= ${binary:Version}) [i386 amd64],
- nvidia-utils-396 (= ${binary:Version}),
+ nvidia-utils-396 (= ${binary:Version}) [amd64],
  xserver-xorg-video-nvidia-396 (= ${binary:Version}),
  libnvidia-cfg1-396 (= ${binary:Version}),
  libnvidia-ifr1-396 (= ${binary:Version}),
@@ -93,7 +93,7 @@ Description: NVIDIA DKMS package
  any new kernel headers that are installed.
 
 Package: nvidia-utils-396
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  ${shlibs:Depends}, ${misc:Depends}
 Suggests:
@@ -127,7 +127,7 @@ Description: NVIDIA libcompute package
  OpenCL.
 
 Package: nvidia-compute-utils-396
-Architecture: i386 amd64
+Architecture: amd64
 Depends:
  libnvidia-compute-396, adduser,
  ${misc:Depends}, ${shlibs:Depends}
