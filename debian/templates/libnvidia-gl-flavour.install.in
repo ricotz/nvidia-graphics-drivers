@@ -7,6 +7,7 @@ NVIDIA-Linux/libGLX_nvidia.so.#VERSION#                              #LIBDIR#
 NVIDIA-Linux/10_nvidia.json                                          usr/share/glvnd/egl_vendor.d
 NVIDIA-Linux/libnvidia-eglcore.so.#VERSION#                          #LIBDIR#
 NVIDIA-Linux/libnvidia-glsi.so.#VERSION#                             #LIBDIR#
+NVIDIA-Linux/libnvidia-glvkspirv.so.#VERSION#                        #LIBDIR#
 NVIDIA-Linux/libEGL_nvidia.so.#VERSION#                              #LIBDIR#
 NVIDIA-Linux/libGLESv2_nvidia.so.#VERSION#                           #LIBDIR#
 NVIDIA-Linux/libGLESv1_CM_nvidia.so.#VERSION#                        #LIBDIR#
