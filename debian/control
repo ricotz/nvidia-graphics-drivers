@@ -185,7 +185,7 @@ Provides: nvidia-kernel-common
 Depends:
  ${misc:Depends}, ${shlibs:Depends}
 Replaces:
- nvidia-dkms-396 (<< 390.48-0ubuntu3~), nvidia-kernel-common
+ nvidia-dkms-396 (<< 396.18-0ubuntu0~gpu18.04.6~), nvidia-kernel-common
 Description: Shared files used with the kernel module
  This package installs all the optional accessory files for the NVIDIA
  kernel module.
