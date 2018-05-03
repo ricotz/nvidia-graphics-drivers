@@ -1,6 +1,7 @@
 nvidia-graphics-drivers-396 (396.24-0ubuntu0~gpu18.10.1) UNRELEASED; urgency=medium
 
   * New upstream release
+  * Add Xorg video ABI 24 support
 
  -- Rico Tzschichholz <ricotz@ubuntu.com>  Thu, 03 May 2018 11:04:45 +0200
 
