@@ -9,7 +9,7 @@
 set -e
 
 PACKAGE_NAME=nvidia
-CVERSION=396.18
+CVERSION=396.24
 CVERSION=${CVERSION#*really.}
 
 
